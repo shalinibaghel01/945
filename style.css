@@ -155,3 +155,15 @@ footer {
 .card:hover {
   transform: scale(1.05);
 }
+.episodes {
+  margin-top: 10px;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.episodes li {
+  margin-bottom: 4px;
+  list-style: disc;
+}
