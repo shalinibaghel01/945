@@ -66,4 +66,105 @@
     <!-- Paste Python-generated cards here -->
   </div>
 </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign In - K-DramaFlix</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
+    body {
+      font-family: Arial, sans-serif;
+      background: url('https://assets.nflxext.com/ffe/siteui/vlv3/3e2ec3a1-9264-4f02-b62d-5453f54dfc0d/cd7f3c4e-e21c-4fd5-b6d3-69a41d1ab1f2/PK-en-20240415-popsignuptwoweeks-perspective_alpha_website_large.jpg') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-container {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 50px;
+      border-radius: 8px;
+      width: 350px;
+      color: #fff;
+      box-shadow: 0 0 20px rgba(229, 9, 20, 0.5);
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #e50914;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 4px;
+      border: none;
+      background-color: #333;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #e50914;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #f6121d;
+    }
+
+    .info {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Sign In to K-DramaFlix</h2>
+    <form id="signinForm">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="number" placeholder="Age" required>
+      <select required>
+        <option value="">Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+      <input type="tel" placeholder="Phone Number" required>
+      <button type="submit">Sign In</button>
+    </form>
+    <div class="info">New to K-DramaFlix? Sign up takes 30 seconds.</div>
+  </div>
+
+  <script>
+    document.getElementById("signinForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      window.location.href = "index.html"; // goes to homepage after login
+    });
+  </script>
+
+</body>
+</html>
